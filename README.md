@@ -51,7 +51,25 @@ The Arduino:
   - Commands from client (`RSSI_ON`, `RSSI_OFF`)
   - Normal text messages from client
   - Text messages coming from Serial Monitor
-  - Optional RSSI reporting
+  - Optional RSSI reporting# Arduino UNO R4 WiFi – Local Network Communication System
+
+This project implements a local network communication system using the Arduino UNO R4 WiFi as a TCP server and a Python client running on a laptop. It enables bidirectional messaging over WiFi and includes an optional RSSI (signal strength) reporting feature controlled by user commands.
+
+---
+
+## How to Run
+
+### 1. Upload Arduino Code
+- Open the `.ino` file in Arduino IDE
+- Update `ssid` and `pass` fields with WiFi credentials
+- Upload to Arduino UNO R4 WiFi
+- Open Serial Monitor at **9600 baud**
+- Confirm WiFi connection and note the displayed IP address
+
+### 2. Configure Python Client
+- Edit `chat_client.py` and set:
+  ```python
+  ARDUINO_IP = "YOUR_ARDUINO_IP"
 
 Key points in the sketch:
 

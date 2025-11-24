@@ -1,7 +1,7 @@
 #include <WiFiS3.h>
 
 
-char ssid[] = "Spider";
+char ssid[] = "Wifi_name";
 char pass[] = "YOUR_PASSWORD"; 
 
 int status = WL_IDLE_STATUS;
